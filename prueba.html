@@ -19,19 +19,45 @@
     <!-- place navbar here -->
     <nav class="navegacion">
         <ul class="menu">
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Nosotros</a></li>
-            <li><a href="#">Servicios</a>
+            <li><a href="#">DATOS</a>
                 <ul class="submenu">
                     <li><a href="#">Servicio #1</a></li>
                     <li><a href="#">Servicio #2</a></li>
                     <li><a href="#">Servicio #3</a></li>
                 </ul>
             </li>
-            <li><a href="#">Contacto</a></li>
-            <li class="pull-right"><a href="#">Cerrar Sesion</a></li>
+            <li><a href="#">HORARIO</a></li>
+            <li><a href="#">RENDICION</a></li>
+            <li><a href="#">REPORTE</a></li>
+            <li class="pull-right"><a href="login.html">CERRAR SESION</a></li>
         </ul>
     </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4">
+                <span class="badge badge-default">DATOS PRINCIPALES:</span>
+                <br>
+                <span class="badge badge-default">EMPRESA:</span>
+                <select>
+                    <option selected="selected">GUAIRENHA</option>
+                    <option>YUTENHA</option>
+                </select>
+                <br>
+                <span class="badge badge-default">FECHA:</span>
+                <script>
+                    var time = new Date();
+                    console.log(time.getHours() + ":" + time.getMinutes() + ":" + time.getSeconds());
+                    </script>
+                <input type="date" id="start" name="trip-start"
+                    value="2023-01-01"
+                    min="2019-01-01" max="2025-12-31"></input>
+            </div>
+            <div class="col-md-4">
+            </div>
+            <div class="col-md-4">
+            </div>
+        </div>
+    </div>
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12">
